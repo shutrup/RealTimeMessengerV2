@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct ProfileView: View {
+    @StateObject var vm = ProfileViewModel()
+    
     var body: some View {
         VStack {
             header
@@ -24,12 +27,22 @@ struct ProfileView_Previews: PreviewProvider {
 }
 
 extension ProfileView {
-    private var header: some View {
+    @ViewBuilder private var header: some View {
         VStack {
-            Image(systemName: "person.circle.fill")
-                .resizable()
-                .frame(width: 80, height: 80)
-                .foregroundColor(Color(.systemGray4))
+            PhotosPicker(selection: $vm.selectedItem) {
+                if let profileImage = vm.profileImage {
+                    profileImage
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 80, height: 80)
+                        .clipShape(Circle())
+                } else {
+                    Image(systemName: "person.circle.fill")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .foregroundColor(Color(.systemGray4))
+                }
+            }
             
             Text("Bruce Wayne")
                 .font(.title2)
