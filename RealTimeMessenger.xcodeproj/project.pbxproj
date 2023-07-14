@@ -12,6 +12,8 @@
 		1554EAD12A618D4E001698A6 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAD02A618D4E001698A6 /* InboxRowView.swift */; };
 		1554EAD42A6190A4001698A6 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAD32A6190A4001698A6 /* NewMessageView.swift */; };
 		1554EAD62A619341001698A6 /* ContactsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAD52A619341001698A6 /* ContactsRowView.swift */; };
+		1554EAD92A619485001698A6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAD82A619485001698A6 /* ProfileView.swift */; };
+		1554EADD2A61BD9D001698A6 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EADC2A61BD9D001698A6 /* SettingsOptionsViewModel.swift */; };
 		158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */; };
 		158C4E712A61412F0005745B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E702A61412F0005745B /* ContentView.swift */; };
 		158C4E732A6141320005745B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E722A6141320005745B /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		1554EAD02A618D4E001698A6 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		1554EAD32A6190A4001698A6 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		1554EAD52A619341001698A6 /* ContactsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRowView.swift; sourceTree = "<group>"; };
+		1554EAD82A619485001698A6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1554EADC2A61BD9D001698A6 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		158C4E6B2A61412F0005745B /* RealTimeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerApp.swift; sourceTree = "<group>"; };
 		158C4E702A61412F0005745B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +119,31 @@
 				1554EAD52A619341001698A6 /* ContactsRowView.swift */,
 			);
 			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		1554EAD72A61947C001698A6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1554EADB2A61BA3D001698A6 /* ViewModel */,
+				1554EADA2A61BA36001698A6 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1554EADA2A61BA36001698A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1554EAD82A619485001698A6 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1554EADB2A61BA3D001698A6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1554EADC2A61BD9D001698A6 /* SettingsOptionsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		158C4E622A61412F0005745B = {
@@ -193,6 +222,7 @@
 		158C4E9A2A6143250005745B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1554EAD72A61947C001698A6 /* Profile */,
 				1554EAD22A61909A001698A6 /* NewMessage */,
 				1554EACF2A6189E0001698A6 /* ActiveNow */,
 				1554EACA2A61885B001698A6 /* Inbox */,
@@ -384,10 +414,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				158C4EA42A6152E80005745B /* AuthTextFieldModifier.swift in Sources */,
+				1554EAD92A619485001698A6 /* ProfileView.swift in Sources */,
 				158C4EA12A6143F40005745B /* LoginView.swift in Sources */,
 				1554EAD12A618D4E001698A6 /* InboxRowView.swift in Sources */,
 				158C4E712A61412F0005745B /* ContentView.swift in Sources */,
 				158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */,
+				1554EADD2A61BD9D001698A6 /* SettingsOptionsViewModel.swift in Sources */,
 				159892082A616BC400055795 /* MessengerLogo.swift in Sources */,
 				1554EACE2A6189CE001698A6 /* ActiveNowView.swift in Sources */,
 				1554EAD42A6190A4001698A6 /* NewMessageView.swift in Sources */,
