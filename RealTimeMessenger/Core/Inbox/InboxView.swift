@@ -52,11 +52,7 @@ extension InboxView {
         ToolbarItem(placement: .navigationBarLeading) {
             HStack {
                 NavigationLink(value: user) {
-                    Image(user.profileImageIrl ?? "")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 32, height: 32)
-                        .clipShape(Circle())
+                    CircleProfileImageView(user: user, size: .xSmall )
                 }
                 
                 Text("Chats")

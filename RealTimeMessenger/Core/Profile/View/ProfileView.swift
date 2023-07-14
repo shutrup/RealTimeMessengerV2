@@ -40,11 +40,7 @@ extension ProfileView {
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
                 } else {
-                    Image(user.profileImageIrl ?? "")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 80, height: 80)
-                        .clipShape(Circle())
+                    CircleProfileImageView(user: user, size: .xLarge)
                 }
             }
             

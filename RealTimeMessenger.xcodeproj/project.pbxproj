@@ -16,6 +16,7 @@
 		1554EADD2A61BD9D001698A6 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EADC2A61BD9D001698A6 /* SettingsOptionsViewModel.swift */; };
 		1554EADF2A61C005001698A6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EADE2A61C005001698A6 /* ProfileViewModel.swift */; };
 		1554EAE12A61C1C1001698A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAE02A61C1C1001698A6 /* User.swift */; };
+		1554EAE32A61C5E1001698A6 /* CircleProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAE22A61C5E1001698A6 /* CircleProfileImageView.swift */; };
 		158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */; };
 		158C4E712A61412F0005745B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E702A61412F0005745B /* ContentView.swift */; };
 		158C4E732A6141320005745B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E722A6141320005745B /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		1554EADC2A61BD9D001698A6 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		1554EADE2A61C005001698A6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		1554EAE02A61C1C1001698A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1554EAE22A61C5E1001698A6 /* CircleProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProfileImageView.swift; sourceTree = "<group>"; };
 		158C4E6B2A61412F0005745B /* RealTimeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerApp.swift; sourceTree = "<group>"; };
 		158C4E702A61412F0005745B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				158C4EA32A6152E80005745B /* AuthTextFieldModifier.swift */,
 				159892072A616BC400055795 /* MessengerLogo.swift */,
 				159892092A616C3E00055795 /* CustomButtonModifier.swift */,
+				1554EAE22A61C5E1001698A6 /* CircleProfileImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1554EAE32A61C5E1001698A6 /* CircleProfileImageView.swift in Sources */,
 				158C4EA42A6152E80005745B /* AuthTextFieldModifier.swift in Sources */,
 				1554EAD92A619485001698A6 /* ProfileView.swift in Sources */,
 				158C4EA12A6143F40005745B /* LoginView.swift in Sources */,

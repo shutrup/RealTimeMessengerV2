@@ -10,10 +10,7 @@ import SwiftUI
 struct ContactsRowView: View {
     var body: some View {
         HStack {
-            Image(systemName: "person.circle.fill")
-                .resizable()
-                .frame(width: 32, height: 32)
-                .foregroundColor(Color(.systemGray4))
+            CircleProfileImageView(user: User.MOCK_USER, size: .small)
             
             Text("Chadwick Bozeman")
                 .font(.subheadline)
