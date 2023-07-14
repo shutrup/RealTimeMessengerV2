@@ -15,6 +15,7 @@
 		1554EAD92A619485001698A6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAD82A619485001698A6 /* ProfileView.swift */; };
 		1554EADD2A61BD9D001698A6 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EADC2A61BD9D001698A6 /* SettingsOptionsViewModel.swift */; };
 		1554EADF2A61C005001698A6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EADE2A61C005001698A6 /* ProfileViewModel.swift */; };
+		1554EAE12A61C1C1001698A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAE02A61C1C1001698A6 /* User.swift */; };
 		158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */; };
 		158C4E712A61412F0005745B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E702A61412F0005745B /* ContentView.swift */; };
 		158C4E732A6141320005745B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E722A6141320005745B /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		1554EAD82A619485001698A6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1554EADC2A61BD9D001698A6 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		1554EADE2A61C005001698A6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1554EAE02A61C1C1001698A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		158C4E6B2A61412F0005745B /* RealTimeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerApp.swift; sourceTree = "<group>"; };
 		158C4E702A61412F0005745B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		158C4E992A6143240005745B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1554EAE02A61C1C1001698A6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				1554EAD92A619485001698A6 /* ProfileView.swift in Sources */,
 				158C4EA12A6143F40005745B /* LoginView.swift in Sources */,
 				1554EAD12A618D4E001698A6 /* InboxRowView.swift in Sources */,
+				1554EAE12A61C1C1001698A6 /* User.swift in Sources */,
 				158C4E712A61412F0005745B /* ContentView.swift in Sources */,
 				158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */,
 				1554EADD2A61BD9D001698A6 /* SettingsOptionsViewModel.swift in Sources */,
