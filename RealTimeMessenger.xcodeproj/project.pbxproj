@@ -14,6 +14,7 @@
 		158C4E802A6141320005745B /* RealTimeMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E7F2A6141320005745B /* RealTimeMessengerTests.swift */; };
 		158C4E8A2A6141320005745B /* RealTimeMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E892A6141320005745B /* RealTimeMessengerUITests.swift */; };
 		158C4E8C2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */; };
+		158C4EA12A6143F40005745B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4EA02A6143F40005745B /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		158C4E852A6141320005745B /* RealTimeMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimeMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C4E892A6141320005745B /* RealTimeMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerUITests.swift; sourceTree = "<group>"; };
 		158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		158C4EA02A6143F40005745B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,11 @@
 		158C4E6D2A61412F0005745B /* RealTimeMessenger */ = {
 			isa = PBXGroup;
 			children = (
-				158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */,
-				158C4E702A61412F0005745B /* ContentView.swift */,
+				158C4E9B2A6143270005745B /* Extensions */,
+				158C4E982A6143200005745B /* Service */,
+				158C4E9C2A6143290005745B /* App */,
+				158C4E9A2A6143250005745B /* Core */,
+				158C4E992A6143240005745B /* Model */,
 				158C4E722A6141320005745B /* Assets.xcassets */,
 				158C4E742A6141320005745B /* Preview Content */,
 			);
@@ -125,6 +130,68 @@
 				158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */,
 			);
 			path = RealTimeMessengerUITests;
+			sourceTree = "<group>";
+		};
+		158C4E982A6143200005745B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		158C4E992A6143240005745B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		158C4E9A2A6143250005745B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E9D2A6143660005745B /* Authentication */,
+				158C4E9E2A6143700005745B /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		158C4E9B2A6143270005745B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		158C4E9C2A6143290005745B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		158C4E9D2A6143660005745B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E9F2A6143E80005745B /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		158C4E9E2A6143700005745B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E702A61412F0005745B /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		158C4E9F2A6143E80005745B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				158C4EA02A6143F40005745B /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158C4EA12A6143F40005745B /* LoginView.swift in Sources */,
 				158C4E712A61412F0005745B /* ContentView.swift in Sources */,
 				158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */,
 			);
