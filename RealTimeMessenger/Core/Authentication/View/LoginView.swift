@@ -103,7 +103,8 @@ extension LoginView {
     }
     private var signUpButton: some View {
         NavigationLink {
-            Text("SIGN IN")
+            RegistrationView()
+                .navigationBarBackButtonHidden(false)
         } label: {
             HStack(spacing: 3) {
                 Text("Don't have an account?")
