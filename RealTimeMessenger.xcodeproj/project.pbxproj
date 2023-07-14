@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */; };
+		158C4E712A61412F0005745B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E702A61412F0005745B /* ContentView.swift */; };
+		158C4E732A6141320005745B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E722A6141320005745B /* Assets.xcassets */; };
+		158C4E762A6141320005745B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E752A6141320005745B /* Preview Assets.xcassets */; };
+		158C4E802A6141320005745B /* RealTimeMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E7F2A6141320005745B /* RealTimeMessengerTests.swift */; };
+		158C4E8A2A6141320005745B /* RealTimeMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E892A6141320005745B /* RealTimeMessengerUITests.swift */; };
+		158C4E8C2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		158C4E7C2A6141320005745B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158C4E632A61412F0005745B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 158C4E6A2A61412F0005745B;
+			remoteInfo = RealTimeMessenger;
+		};
+		158C4E862A6141320005745B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158C4E632A61412F0005745B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 158C4E6A2A61412F0005745B;
+			remoteInfo = RealTimeMessenger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		158C4E6B2A61412F0005745B /* RealTimeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerApp.swift; sourceTree = "<group>"; };
+		158C4E702A61412F0005745B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		158C4E722A6141320005745B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		158C4E752A6141320005745B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		158C4E7B2A6141320005745B /* RealTimeMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimeMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		158C4E7F2A6141320005745B /* RealTimeMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerTests.swift; sourceTree = "<group>"; };
+		158C4E852A6141320005745B /* RealTimeMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimeMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		158C4E892A6141320005745B /* RealTimeMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerUITests.swift; sourceTree = "<group>"; };
+		158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		158C4E682A61412F0005745B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158C4E782A6141320005745B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158C4E822A6141320005745B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		158C4E622A61412F0005745B = {
+			isa = PBXGroup;
+			children = (
+				158C4E6D2A61412F0005745B /* RealTimeMessenger */,
+				158C4E7E2A6141320005745B /* RealTimeMessengerTests */,
+				158C4E882A6141320005745B /* RealTimeMessengerUITests */,
+				158C4E6C2A61412F0005745B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		158C4E6C2A61412F0005745B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E6B2A61412F0005745B /* RealTimeMessenger.app */,
+				158C4E7B2A6141320005745B /* RealTimeMessengerTests.xctest */,
+				158C4E852A6141320005745B /* RealTimeMessengerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		158C4E6D2A61412F0005745B /* RealTimeMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */,
+				158C4E702A61412F0005745B /* ContentView.swift */,
+				158C4E722A6141320005745B /* Assets.xcassets */,
+				158C4E742A6141320005745B /* Preview Content */,
+			);
+			path = RealTimeMessenger;
+			sourceTree = "<group>";
+		};
+		158C4E742A6141320005745B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E752A6141320005745B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		158C4E7E2A6141320005745B /* RealTimeMessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E7F2A6141320005745B /* RealTimeMessengerTests.swift */,
+			);
+			path = RealTimeMessengerTests;
+			sourceTree = "<group>";
+		};
+		158C4E882A6141320005745B /* RealTimeMessengerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				158C4E892A6141320005745B /* RealTimeMessengerUITests.swift */,
+				158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */,
+			);
+			path = RealTimeMessengerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		158C4E6A2A61412F0005745B /* RealTimeMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158C4E8F2A6141320005745B /* Build configuration list for PBXNativeTarget "RealTimeMessenger" */;
+			buildPhases = (
+				158C4E672A61412F0005745B /* Sources */,
+				158C4E682A61412F0005745B /* Frameworks */,
+				158C4E692A61412F0005745B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealTimeMessenger;
+			productName = RealTimeMessenger;
+			productReference = 158C4E6B2A61412F0005745B /* RealTimeMessenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		158C4E7A2A6141320005745B /* RealTimeMessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158C4E922A6141320005745B /* Build configuration list for PBXNativeTarget "RealTimeMessengerTests" */;
+			buildPhases = (
+				158C4E772A6141320005745B /* Sources */,
+				158C4E782A6141320005745B /* Frameworks */,
+				158C4E792A6141320005745B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				158C4E7D2A6141320005745B /* PBXTargetDependency */,
+			);
+			name = RealTimeMessengerTests;
+			productName = RealTimeMessengerTests;
+			productReference = 158C4E7B2A6141320005745B /* RealTimeMessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		158C4E842A6141320005745B /* RealTimeMessengerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158C4E952A6141320005745B /* Build configuration list for PBXNativeTarget "RealTimeMessengerUITests" */;
+			buildPhases = (
+				158C4E812A6141320005745B /* Sources */,
+				158C4E822A6141320005745B /* Frameworks */,
+				158C4E832A6141320005745B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				158C4E872A6141320005745B /* PBXTargetDependency */,
+			);
+			name = RealTimeMessengerUITests;
+			productName = RealTimeMessengerUITests;
+			productReference = 158C4E852A6141320005745B /* RealTimeMessengerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		158C4E632A61412F0005745B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					158C4E6A2A61412F0005745B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					158C4E7A2A6141320005745B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 158C4E6A2A61412F0005745B;
+					};
+					158C4E842A6141320005745B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 158C4E6A2A61412F0005745B;
+					};
+				};
+			};
+			buildConfigurationList = 158C4E662A61412F0005745B /* Build configuration list for PBXProject "RealTimeMessenger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 158C4E622A61412F0005745B;
+			productRefGroup = 158C4E6C2A61412F0005745B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				158C4E6A2A61412F0005745B /* RealTimeMessenger */,
+				158C4E7A2A6141320005745B /* RealTimeMessengerTests */,
+				158C4E842A6141320005745B /* RealTimeMessengerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		158C4E692A61412F0005745B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158C4E762A6141320005745B /* Preview Assets.xcassets in Resources */,
+				158C4E732A6141320005745B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158C4E792A6141320005745B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158C4E832A6141320005745B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		158C4E672A61412F0005745B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158C4E712A61412F0005745B /* ContentView.swift in Sources */,
+				158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158C4E772A6141320005745B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158C4E802A6141320005745B /* RealTimeMessengerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158C4E812A6141320005745B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158C4E8A2A6141320005745B /* RealTimeMessengerUITests.swift in Sources */,
+				158C4E8C2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		158C4E7D2A6141320005745B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 158C4E6A2A61412F0005745B /* RealTimeMessenger */;
+			targetProxy = 158C4E7C2A6141320005745B /* PBXContainerItemProxy */;
+		};
+		158C4E872A6141320005745B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 158C4E6A2A61412F0005745B /* RealTimeMessenger */;
+			targetProxy = 158C4E862A6141320005745B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		158C4E8D2A6141320005745B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		158C4E8E2A6141320005745B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		158C4E902A6141320005745B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RealTimeMessenger/Preview Content\"";
+				DEVELOPMENT_TEAM = PP55TUKCZU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shurup.RealTimeMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		158C4E912A6141320005745B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RealTimeMessenger/Preview Content\"";
+				DEVELOPMENT_TEAM = PP55TUKCZU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shurup.RealTimeMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		158C4E932A6141320005745B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP55TUKCZU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shurup.RealTimeMessengerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimeMessenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RealTimeMessenger";
+			};
+			name = Debug;
+		};
+		158C4E942A6141320005745B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP55TUKCZU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shurup.RealTimeMessengerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimeMessenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RealTimeMessenger";
+			};
+			name = Release;
+		};
+		158C4E962A6141320005745B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP55TUKCZU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shurup.RealTimeMessengerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RealTimeMessenger;
+			};
+			name = Debug;
+		};
+		158C4E972A6141320005745B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP55TUKCZU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shurup.RealTimeMessengerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RealTimeMessenger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		158C4E662A61412F0005745B /* Build configuration list for PBXProject "RealTimeMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158C4E8D2A6141320005745B /* Debug */,
+				158C4E8E2A6141320005745B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158C4E8F2A6141320005745B /* Build configuration list for PBXNativeTarget "RealTimeMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158C4E902A6141320005745B /* Debug */,
+				158C4E912A6141320005745B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158C4E922A6141320005745B /* Build configuration list for PBXNativeTarget "RealTimeMessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158C4E932A6141320005745B /* Debug */,
+				158C4E942A6141320005745B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158C4E952A6141320005745B /* Build configuration list for PBXNativeTarget "RealTimeMessengerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158C4E962A6141320005745B /* Debug */,
+				158C4E972A6141320005745B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 158C4E632A61412F0005745B /* Project object */;
+}
