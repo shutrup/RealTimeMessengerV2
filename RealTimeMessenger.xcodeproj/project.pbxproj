@@ -16,6 +16,9 @@
 		158C4E8C2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */; };
 		158C4EA12A6143F40005745B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4EA02A6143F40005745B /* LoginView.swift */; };
 		158C4EA42A6152E80005745B /* AuthTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4EA32A6152E80005745B /* AuthTextFieldModifier.swift */; };
+		159892062A616B9E00055795 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159892052A616B9E00055795 /* RegistrationView.swift */; };
+		159892082A616BC400055795 /* MessengerLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159892072A616BC400055795 /* MessengerLogo.swift */; };
+		1598920A2A616C3E00055795 /* CustomButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159892092A616C3E00055795 /* CustomButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		158C4EA02A6143F40005745B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		158C4EA32A6152E80005745B /* AuthTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldModifier.swift; sourceTree = "<group>"; };
+		159892052A616B9E00055795 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		159892072A616BC400055795 /* MessengerLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerLogo.swift; sourceTree = "<group>"; };
+		159892092A616C3E00055795 /* CustomButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				158C4EA02A6143F40005745B /* LoginView.swift */,
+				159892052A616B9E00055795 /* RegistrationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				158C4EA32A6152E80005745B /* AuthTextFieldModifier.swift */,
+				159892072A616BC400055795 /* MessengerLogo.swift */,
+				159892092A616C3E00055795 /* CustomButtonModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -339,6 +348,9 @@
 				158C4EA12A6143F40005745B /* LoginView.swift in Sources */,
 				158C4E712A61412F0005745B /* ContentView.swift in Sources */,
 				158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */,
+				159892082A616BC400055795 /* MessengerLogo.swift in Sources */,
+				1598920A2A616C3E00055795 /* CustomButtonModifier.swift in Sources */,
+				159892062A616B9E00055795 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

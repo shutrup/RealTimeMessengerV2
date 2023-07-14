@@ -16,7 +16,7 @@ struct LoginView: View {
             VStack {
                 Spacer()
                 
-                logo
+                MessengerLogo()
                 
                 textFields
                 
@@ -30,7 +30,7 @@ struct LoginView: View {
                 
                 Divider()
                 
-                singUpButton
+                signUpButton
             }
         }
     }
@@ -43,13 +43,6 @@ struct LoginView_Previews: PreviewProvider {
 }
 
 extension LoginView {
-    private var logo: some View {
-        Image("messenger")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 150, height: 150)
-            .padding()
-    }
     private var textFields: some View {
         VStack {
             TextField("Enter your email", text: $email)
@@ -76,12 +69,7 @@ extension LoginView {
                 
             } label: {
                 Text("Login")
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .frame(width: UIScreen.main.bounds.width - 40, height: 44)
-                    .background(Color(.systemBlue))
-                    .cornerRadius(10)
+                    .modifier(CustomButtonModifier())
             }
             .padding(.vertical)
         }
@@ -113,14 +101,14 @@ extension LoginView {
         }
         .padding(.top, 8)
     }
-    private var singUpButton: some View {
+    private var signUpButton: some View {
         NavigationLink {
-            Text("SING IN")
+            Text("SIGN IN")
         } label: {
             HStack(spacing: 3) {
                 Text("Don't have an account?")
                 
-                Text("Sing Up")
+                Text("Sign Up")
                     .fontWeight(.semibold)
             }
             .font(.footnote)
