@@ -11,6 +11,7 @@ struct RegistrationView: View {
     @State var email: String = ""
     @State var name: String = ""
     @State var password: String = ""
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
@@ -62,13 +63,13 @@ extension RegistrationView {
         .padding(.top)
     }
     private var signInButton: some View {
-        NavigationLink {
-            Text("SIGN IN")
+        Button {
+            dismiss()
         } label: {
             HStack(spacing: 3) {
-                Text("Don't have an account?")
+                Text("Already have a account?")
                 
-                Text("Sign Ip")
+                Text("Sign In")
                     .fontWeight(.semibold)
             }
             .font(.footnote)
