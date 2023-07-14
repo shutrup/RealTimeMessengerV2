@@ -15,6 +15,7 @@
 		158C4E8A2A6141320005745B /* RealTimeMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E892A6141320005745B /* RealTimeMessengerUITests.swift */; };
 		158C4E8C2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */; };
 		158C4EA12A6143F40005745B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4EA02A6143F40005745B /* LoginView.swift */; };
+		158C4EA42A6152E80005745B /* AuthTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4EA32A6152E80005745B /* AuthTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		158C4E892A6141320005745B /* RealTimeMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerUITests.swift; sourceTree = "<group>"; };
 		158C4E8B2A6141320005745B /* RealTimeMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		158C4EA02A6143F40005745B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		158C4EA32A6152E80005745B /* AuthTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		158C4E9A2A6143250005745B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				158C4EA22A6152C70005745B /* Components */,
 				158C4E9D2A6143660005745B /* Authentication */,
 				158C4E9E2A6143700005745B /* Root */,
 			);
@@ -192,6 +195,14 @@
 				158C4EA02A6143F40005745B /* LoginView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		158C4EA22A6152C70005745B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				158C4EA32A6152E80005745B /* AuthTextFieldModifier.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158C4EA42A6152E80005745B /* AuthTextFieldModifier.swift in Sources */,
 				158C4EA12A6143F40005745B /* LoginView.swift in Sources */,
 				158C4E712A61412F0005745B /* ContentView.swift in Sources */,
 				158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */,

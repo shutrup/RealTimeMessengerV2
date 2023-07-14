@@ -8,13 +8,123 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State var email: String = ""
+    @State var password: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Spacer()
+                
+                logo
+                
+                textFields
+                
+                forgotAndLoginButtons
+                
+                customDivider
+                
+                facebookButton
+                
+                Spacer()
+                
+                Divider()
+                
+                singUpButton
+            }
+        }
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+    }
+}
+
+extension LoginView {
+    private var logo: some View {
+        Image("messenger")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 150, height: 150)
+            .padding()
+    }
+    private var textFields: some View {
+        VStack {
+            TextField("Enter your email", text: $email)
+                .modifier(AuthTextFieldModifier())
+            
+            SecureField("Enter your password", text: $password)
+                .modifier(AuthTextFieldModifier())
+        }
+    }
+    private var forgotAndLoginButtons: some View {
+        Group {
+            Button {
+                
+            } label: {
+                Text("Forgot Password?")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                    .padding(.top)
+                    .padding(.trailing, 28)
+            }
+            .frame(maxWidth: .infinity, alignment: .trailing)
+            
+            Button {
+                
+            } label: {
+                Text("Login")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: UIScreen.main.bounds.width - 40, height: 44)
+                    .background(Color(.systemBlue))
+                    .cornerRadius(10)
+            }
+            .padding(.vertical)
+        }
+    }
+    private var customDivider: some View {
+        HStack {
+            Rectangle()
+                .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+            
+            Text("OR")
+                .font(.footnote)
+                .fontWeight(.semibold)
+            
+            Rectangle()
+                .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+        }
+        .foregroundColor(.gray)
+    }
+    private var facebookButton: some View {
+        HStack {
+            Image("facebook")
+                .resizable()
+                .frame(width: 20, height: 20)
+            
+            Text("Continue with Facebook")
+                .font(.footnote)
+                .fontWeight(.semibold)
+                .foregroundColor(Color(.systemBlue))
+        }
+        .padding(.top, 8)
+    }
+    private var singUpButton: some View {
+        NavigationLink {
+            Text("SING IN")
+        } label: {
+            HStack(spacing: 3) {
+                Text("Don't have an account?")
+                
+                Text("Sing Up")
+                    .fontWeight(.semibold)
+            }
+            .font(.footnote)
+        }
+        .padding(.vertical)
     }
 }
