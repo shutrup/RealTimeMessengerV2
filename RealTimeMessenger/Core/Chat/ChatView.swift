@@ -12,9 +12,9 @@ struct ChatView: View {
     
     var body: some View {
         VStack {
+            header
+            
             ScrollView {
-                header
-                
                 messages
             }
             
