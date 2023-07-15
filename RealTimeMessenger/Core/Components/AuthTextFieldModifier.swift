@@ -15,5 +15,6 @@ struct AuthTextFieldModifier: ViewModifier {
             .background(Color(.systemGray6))
             .cornerRadius(10)
             .padding(.horizontal, 24)
+            .textCase(.lowercase)
     }
 }

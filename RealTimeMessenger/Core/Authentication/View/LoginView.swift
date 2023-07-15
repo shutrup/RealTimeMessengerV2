@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var email: String = ""
-    @State var password: String = ""
+    @StateObject private var loginVM = LoginViewModel()
     
     var body: some View {
         NavigationStack {
@@ -45,10 +44,10 @@ struct LoginView_Previews: PreviewProvider {
 extension LoginView {
     private var textFields: some View {
         VStack {
-            TextField("Enter your email", text: $email)
+            TextField("Enter your email", text: $loginVM.email)
                 .modifier(AuthTextFieldModifier())
             
-            SecureField("Enter your password", text: $password)
+            SecureField("Enter your password", text: $loginVM.password)
                 .modifier(AuthTextFieldModifier())
         }
     }
@@ -66,7 +65,7 @@ extension LoginView {
             .frame(maxWidth: .infinity, alignment: .trailing)
             
             Button {
-                
+                Task { try await self.loginVM.login() }
             } label: {
                 Text("Login")
                     .modifier(CustomButtonModifier())

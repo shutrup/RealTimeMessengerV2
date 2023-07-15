@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State var email: String = ""
-    @State var name: String = ""
-    @State var password: String = ""
+    @StateObject private var vm = RegistrationViewModel()
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -43,19 +41,19 @@ struct RegistrationView_Previews: PreviewProvider {
 extension RegistrationView {
     private var textFields: some View {
         VStack {
-            TextField("Enter your email", text: $email)
+            TextField("Enter your email", text: $vm.email)
                 .modifier(AuthTextFieldModifier())
             
-            TextField("Enter your full name", text: $name)
+            TextField("Enter your full name", text: $vm.fullname)
                 .modifier(AuthTextFieldModifier())
             
-            SecureField("Enter your password", text: $password)
+            SecureField("Enter your password", text: $vm.password)
                 .modifier(AuthTextFieldModifier())
         }
     }
     private var signUpButton: some View {
         Button {
-            
+            Task { try await vm.createUser() }
         } label: {
             Text("Sign Up")
                 .modifier(CustomButtonModifier())
