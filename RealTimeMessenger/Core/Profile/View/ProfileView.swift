@@ -68,7 +68,7 @@ extension ProfileView {
                 
                 Section {
                     Button {
-                        
+                        AuthService.shared.signOut()
                     } label: {
                         Text("Log out")
                     }

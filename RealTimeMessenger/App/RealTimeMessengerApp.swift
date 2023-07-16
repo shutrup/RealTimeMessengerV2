@@ -23,7 +23,7 @@ struct RealTimeMessengerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ContentView()
         }
     }
 }
