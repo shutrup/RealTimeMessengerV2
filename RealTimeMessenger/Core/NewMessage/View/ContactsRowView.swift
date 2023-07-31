@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContactsRowView: View {
+    var user: User
+    
     var body: some View {
         HStack {
-            CircleProfileImageView(user: User.MOCK_USER, size: .small)
+            CircleProfileImageView(user: user, size: .small)
             
-            Text("Chadwick Bozeman")
+            Text(user.fullname)
                 .font(.subheadline)
-                .foregroundColor(.gray)
+                .fontWeight(.semibold)
             
             Spacer()
         }
@@ -24,6 +26,6 @@ struct ContactsRowView: View {
 
 struct ContactsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsRowView()
+        ContactsRowView(user: .MOCK_USER)
     }
 }

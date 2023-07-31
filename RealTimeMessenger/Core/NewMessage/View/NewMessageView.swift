@@ -10,6 +10,7 @@ import SwiftUI
 struct NewMessageView: View {
     @Environment(\.dismiss) var dismiss
     @State var searchText: String = ""
+    @StateObject var vm = NewMessageViewModel()
     
     var body: some View {
         NavigationStack {
@@ -24,6 +25,11 @@ struct NewMessageView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 leadingToolBarItem
+            }
+        }
+        .onAppear {
+            Task {
+                try await vm.fetchAllUsers()
             }
         }
     }
@@ -60,8 +66,8 @@ extension NewMessageView {
             .padding()
     }
     private var listContacts: some View {
-        ForEach(0..<10, id: \.self) { item in
-            ContactsRowView()
+        ForEach(vm.users, id: \.self) { user in
+            ContactsRowView(user: user)
             
             Divider()
                 .padding(.leading, 40)
