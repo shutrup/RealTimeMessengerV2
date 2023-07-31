@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct CircleProfileImageView: View {
-    let user: User
+    let user: User?
     let size: ProfileImageSize
     var body: some View {
-        if let profileImage = user.profileImageIrl {
+        if let profileImage = user?.profileImageIrl {
             Image(profileImage)
                 .resizable()
                 .scaledToFill()
