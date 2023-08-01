@@ -1,5 +1,5 @@
 //
-//  MessageService.swift
+//  ChatService.swift
 //  RealTimeMessenger
 //
 //  Created by Шарап Бамматов on 01.08.2023.
@@ -9,16 +9,15 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
-struct MessageService {
+struct ChatService {
+    let chatPartner: User
     
-    static let messagesCollection = Firestore.firestore().collection("messages")
-    
-    static func sendMessage(_ messageText: String, toUser user: User) {
+    func sendMessage(_ messageText: String) {
         guard let currentUid = Auth.auth().currentUser?.uid else { return }
-        let chatPartnerId = user.id
+        let chatPartnerId = chatPartner.id
         
-        let currentUserRef = messagesCollection.document(currentUid).collection(chatPartnerId).document()
-        let chatPartnerRef = messagesCollection.document(chatPartnerId).collection(currentUid)
+        let currentUserRef = FirestoreConstants.MessageCollection.document(currentUid).collection(chatPartnerId).document()
+        let chatPartnerRef = FirestoreConstants.MessageCollection.document(chatPartnerId).collection(currentUid)
         
         let messageId = currentUserRef.documentID
         
@@ -36,11 +35,11 @@ struct MessageService {
         chatPartnerRef.document(messageId).setData(messageData)
     }
     
-    static func observeMessages(chatPartner: User, compl: @escaping([Message]) -> Void ) {
+    func observeMessages(compl: @escaping([Message]) -> Void ) {
         guard let currentUid = Auth.auth().currentUser?.uid else { return }
         let chatPartnerId = chatPartner.id
         
-        let query = messagesCollection
+        let query = FirestoreConstants.MessageCollection
             .document(currentUid)
             .collection(chatPartnerId)
             .order(by: "timestamp", descending: false)

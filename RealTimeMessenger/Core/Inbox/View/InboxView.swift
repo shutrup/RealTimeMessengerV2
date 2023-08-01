@@ -80,6 +80,7 @@ extension InboxView {
         ToolbarItem(placement: .navigationBarTrailing) {
             Button {
                 self.showNewMessageView.toggle()
+                self.selectedUser = nil
             } label: {
                 Image(systemName: "square.and.pencil.circle.fill")
                     .resizable()
