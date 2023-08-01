@@ -54,8 +54,8 @@ extension ChatView {
         }
     }
     private var messages: some View {
-        ForEach(0..<15, id: \.self) { message in
-            ChatMessageCell(isFromCurrentUser: .random())
+        ForEach(vm.messages, id: \.self) { message in
+            ChatMessageCell(message: message)
         }
     }
     private var messageTextField: some View {

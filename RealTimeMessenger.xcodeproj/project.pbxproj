@@ -307,10 +307,10 @@
 			isa = PBXGroup;
 			children = (
 				158C4E9B2A6143270005745B /* Extensions */,
+				158C4E992A6143240005745B /* Model */,
 				158C4E982A6143200005745B /* Service */,
 				158C4E9C2A6143290005745B /* App */,
 				158C4E9A2A6143250005745B /* Core */,
-				158C4E992A6143240005745B /* Model */,
 				158C4E722A6141320005745B /* Assets.xcassets */,
 				1554EAEB2A62F885001698A6 /* GoogleService-Info.plist */,
 				158C4E742A6141320005745B /* Preview Content */,
