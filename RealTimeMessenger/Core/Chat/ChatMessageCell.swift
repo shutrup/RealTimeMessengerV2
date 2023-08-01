@@ -44,6 +44,6 @@ struct ChatMessageCell: View {
 
 struct ChatMessageCell_Previews: PreviewProvider {
     static var previews: some View {
-        ChatView()
+        ChatView(user: .MOCK_USER)
     }
 }

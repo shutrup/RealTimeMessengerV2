@@ -11,6 +11,7 @@ struct NewMessageView: View {
     @Environment(\.dismiss) var dismiss
     @State var searchText: String = ""
     @StateObject var vm = NewMessageViewModel()
+    @Binding var selectedUser: User? 
     
     var body: some View {
         NavigationStack {
@@ -38,7 +39,7 @@ struct NewMessageView: View {
 struct NewMessageView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            NewMessageView()
+            NewMessageView(selectedUser: .constant(User.MOCK_USER))
         }
     }
 }
@@ -67,10 +68,16 @@ extension NewMessageView {
     }
     private var listContacts: some View {
         ForEach(vm.users, id: \.self) { user in
-            ContactsRowView(user: user)
-            
-            Divider()
-                .padding(.leading, 40)
+            VStack {
+                ContactsRowView(user: user)
+                
+                Divider()
+                    .padding(.leading, 40)
+            }
+            .onTapGesture {
+                selectedUser = user
+                dismiss()
+            }
         }
     }
 }
