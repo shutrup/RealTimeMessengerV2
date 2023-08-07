@@ -36,6 +36,8 @@
 		1554EAFB2A631E60001698A6 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAFA2A631E60001698A6 /* RegistrationViewModel.swift */; };
 		1554EAFD2A631E7B001698A6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EAFC2A631E7B001698A6 /* AuthService.swift */; };
 		1554EB012A64114F001698A6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EB002A64114F001698A6 /* ContentViewModel.swift */; };
+		1559384B2A811EBF0048796C /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559384A2A811EBF0048796C /* InboxService.swift */; };
+		1559384D2A8139030048796C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559384C2A8139030048796C /* Date.swift */; };
 		158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */; };
 		158C4E712A61412F0005745B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E702A61412F0005745B /* ContentView.swift */; };
 		158C4E732A6141320005745B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E722A6141320005745B /* Assets.xcassets */; };
@@ -93,6 +95,8 @@
 		1554EAFA2A631E60001698A6 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		1554EAFC2A631E7B001698A6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1554EB002A64114F001698A6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		1559384A2A811EBF0048796C /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		1559384C2A8139030048796C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		158C4E6B2A61412F0005745B /* RealTimeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerApp.swift; sourceTree = "<group>"; };
 		158C4E702A61412F0005745B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 		1554EACA2A61885B001698A6 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
+				155938492A811EB10048796C /* Service */,
 				153B7AA92A7849D600098ADD /* ViewModel */,
 				153B7AA82A7849D300098ADD /* View */,
 			);
@@ -300,6 +305,14 @@
 				1554EB002A64114F001698A6 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		155938492A811EB10048796C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1559384A2A811EBF0048796C /* InboxService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		158C4E622A61412F0005745B = {
@@ -398,6 +411,7 @@
 		158C4E9B2A6143270005745B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1559384C2A8139030048796C /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -593,6 +607,7 @@
 				1507CE782A784150007376E9 /* UserService.swift in Sources */,
 				1554EAFD2A631E7B001698A6 /* AuthService.swift in Sources */,
 				1554EAFB2A631E60001698A6 /* RegistrationViewModel.swift in Sources */,
+				1559384D2A8139030048796C /* Date.swift in Sources */,
 				158C4EA42A6152E80005745B /* AuthTextFieldModifier.swift in Sources */,
 				1554EAD92A619485001698A6 /* ProfileView.swift in Sources */,
 				158C4EA12A6143F40005745B /* LoginView.swift in Sources */,
@@ -619,6 +634,7 @@
 				1554EAD62A619341001698A6 /* ContactsRowView.swift in Sources */,
 				159892062A616B9E00055795 /* RegistrationView.swift in Sources */,
 				153B7AB72A7939A500098ADD /* ChatViewModel.swift in Sources */,
+				1559384B2A811EBF0048796C /* InboxService.swift in Sources */,
 				1554EAF92A631C5B001698A6 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

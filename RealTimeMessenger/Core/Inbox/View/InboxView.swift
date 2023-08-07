@@ -11,7 +11,7 @@ struct InboxView: View {
     @State private var showNewMessageView: Bool = false
     @StateObject private var vm = InboxViewModel()
     
-    @State private var selectedUser: User? 
+    @State private var selectedUser: User?
     @State private var showChat: Bool = false
     
     private var user: User? {
@@ -20,19 +20,31 @@ struct InboxView: View {
     
     var body: some View {
         NavigationStack {
-            VStack { // instead of ScrollView
+            List {
                 ActiveNowView()
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets())
+                    .padding(.vertical)
+                    .padding(.horizontal, 4)
                 
-                List {
-                    ForEach(0..<10, id:\.self) { row in
-                        InboxRowView()
+                ForEach(vm.recentMessages, id:\.self) { row in
+                    ZStack {
+                        NavigationLink(value: row) {
+                            EmptyView()
+                        }.opacity(0)
+                        
+                        InboxRowView(message: row)
                     }
                 }
-                .listStyle(.plain)
-//                .frame(height: UIScreen.main.bounds.height - 120) modifier for ScrollView
             }
+            .listStyle(.plain)
             .onChange(of: selectedUser, perform: { newValue in
                 showChat = newValue != nil
+            })
+            .navigationDestination(for: Message.self, destination: { message in
+                if let user = message.user {
+                    ChatView(user: user)
+                }
             })
             .navigationDestination(for: User.self, destination: { user in
                 ProfileView(user: user)
