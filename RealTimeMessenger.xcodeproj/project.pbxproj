@@ -38,6 +38,8 @@
 		1554EB012A64114F001698A6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554EB002A64114F001698A6 /* ContentViewModel.swift */; };
 		1559384B2A811EBF0048796C /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559384A2A811EBF0048796C /* InboxService.swift */; };
 		1559384D2A8139030048796C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559384C2A8139030048796C /* Date.swift */; };
+		155938512A813C930048796C /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155938502A813C930048796C /* ActiveNowViewModel.swift */; };
+		155938542A814BC20048796C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155938532A814BC20048796C /* Route.swift */; };
 		158C4E6F2A61412F0005745B /* RealTimeMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */; };
 		158C4E712A61412F0005745B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E702A61412F0005745B /* ContentView.swift */; };
 		158C4E732A6141320005745B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E722A6141320005745B /* Assets.xcassets */; };
@@ -97,6 +99,8 @@
 		1554EB002A64114F001698A6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		1559384A2A811EBF0048796C /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 		1559384C2A8139030048796C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		155938502A813C930048796C /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
+		155938532A814BC20048796C /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		158C4E6B2A61412F0005745B /* RealTimeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C4E6E2A61412F0005745B /* RealTimeMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeMessengerApp.swift; sourceTree = "<group>"; };
 		158C4E702A61412F0005745B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -224,7 +228,8 @@
 		1554EACF2A6189E0001698A6 /* ActiveNow */ = {
 			isa = PBXGroup;
 			children = (
-				1554EACD2A6189CE001698A6 /* ActiveNowView.swift */,
+				1559384F2A813C850048796C /* ViewModel */,
+				1559384E2A813C830048796C /* View */,
 			);
 			path = ActiveNow;
 			sourceTree = "<group>";
@@ -315,6 +320,30 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		1559384E2A813C830048796C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1554EACD2A6189CE001698A6 /* ActiveNowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1559384F2A813C850048796C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				155938502A813C930048796C /* ActiveNowViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		155938522A814BBA0048796C /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				155938532A814BC20048796C /* Route.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		158C4E622A61412F0005745B = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +367,7 @@
 		158C4E6D2A61412F0005745B /* RealTimeMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				155938522A814BBA0048796C /* Routing */,
 				153B7ABB2A794F9100098ADD /* Utils */,
 				158C4E9B2A6143270005745B /* Extensions */,
 				158C4E992A6143240005745B /* Model */,
@@ -610,6 +640,7 @@
 				1559384D2A8139030048796C /* Date.swift in Sources */,
 				158C4EA42A6152E80005745B /* AuthTextFieldModifier.swift in Sources */,
 				1554EAD92A619485001698A6 /* ProfileView.swift in Sources */,
+				155938512A813C930048796C /* ActiveNowViewModel.swift in Sources */,
 				158C4EA12A6143F40005745B /* LoginView.swift in Sources */,
 				1554EAE62A61D119001698A6 /* ChatView.swift in Sources */,
 				1554EAD12A618D4E001698A6 /* InboxRowView.swift in Sources */,
@@ -635,6 +666,7 @@
 				159892062A616B9E00055795 /* RegistrationView.swift in Sources */,
 				153B7AB72A7939A500098ADD /* ChatViewModel.swift in Sources */,
 				1559384B2A811EBF0048796C /* InboxService.swift in Sources */,
+				155938542A814BC20048796C /* Route.swift in Sources */,
 				1554EAF92A631C5B001698A6 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

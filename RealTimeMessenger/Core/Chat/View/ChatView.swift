@@ -28,6 +28,8 @@ struct ChatView: View {
             
             messageTextField
         }
+        .navigationTitle(user.fullname)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -54,8 +56,10 @@ extension ChatView {
         }
     }
     private var messages: some View {
-        ForEach(vm.messages, id: \.self) { message in
-            ChatMessageCell(message: message)
+        LazyVStack {
+            ForEach(vm.messages, id: \.self) { message in
+                ChatMessageCell(message: message)
+            }
         }
     }
     private var messageTextField: some View {
